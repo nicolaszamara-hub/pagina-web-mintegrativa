@@ -1,6 +1,6 @@
 # Landing de terapias integrales
 
-Maqueta estática inspirada en la estructura de `nicolaszamara.com`: hero, navegación con submenú, presentación, curso destacado, servicios, reservas, páginas interiores, gráficos y footer.
+Sitio estático para Medicina Integrativa Chile, enfocado en dolor crónico y acompañamiento oncológico integrativo.
 
 ## Probar localmente
 
@@ -16,19 +16,15 @@ Abre `index.html` directamente en el navegador o usa cualquier servidor estátic
 
 ## Personalización rápida
 
-- Cambia `Nombre Marca` por tu marca o nombre.
-- Reemplaza el WhatsApp en `index.html`.
-- Sustituye imágenes, textos y servicios por contenido propio.
-- Conecta `Reservar hora` a Calendly, WhatsApp o tu sistema de agenda.
+- Reemplaza el WhatsApp en `reservas.html` y `contacto.html`.
+- Sustituye imágenes de referencia por fotos reales del equipo y del espacio.
+- Conecta `Agendar evaluación inicial` a Calendly, WhatsApp o tu sistema de agenda.
 
 ## Páginas incluidas
 
 - `index.html`: portada.
-- `experiencia.html`: trayectoria, enfoque y gráfico de foco terapéutico.
-- `terapias.html`: detalle de terapias y gráficos circulares.
-- `reservas.html`: tipos de sesión y disponibilidad semanal.
-- `cursos.html`: programas y ruta formativa.
-- `webinars.html`: próximos eventos y gráfico de interés.
-- `blog.html`: artículos y métricas de lectura.
-- `lifestyle.html`: experiencias y gráfico tipo radar.
-- `contacto.html`: canales, formulario y tiempos de respuesta.
+- `quienes-somos.html`: equipo y enfoque.
+- `programas.html`: dolor crónico y acompañamiento oncológico.
+- `reservas.html`: evaluación inicial.
+- `noticias.html`: contenidos educativos.
+- `contacto.html`: canales y formulario.
