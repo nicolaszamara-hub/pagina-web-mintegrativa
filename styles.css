@@ -8,6 +8,8 @@
   --mist: #e7eee5;
   --line: rgba(31, 43, 36, 0.14);
   --shadow: 0 24px 70px rgba(31, 43, 36, 0.16);
+  --radius-lg: 24px;
+  --radius-md: 16px;
 }
 
 * {
@@ -258,12 +260,7 @@ a {
 }
 
 .eyebrow {
-  margin: 0 0 12px;
-  color: var(--clay);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  display: none !important;
 }
 
 .hero .eyebrow {
@@ -314,13 +311,15 @@ h3 {
   min-height: 48px;
   padding: 0 22px;
   margin-top: 10px;
-  background: var(--clay);
+  border-radius: 999px;
+  background: var(--leaf-dark);
   color: #fff;
   font-weight: 800;
 }
 
 .button:hover {
-  background: #9c5f3d;
+  background: #164844;
+  transform: translateY(-1px);
 }
 
 .button-light {
@@ -349,6 +348,7 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
 
@@ -398,6 +398,8 @@ h3 {
   display: grid;
   grid-template-rows: auto 1fr;
   background: #fff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 .program-card img {
@@ -448,6 +450,7 @@ h3 {
   min-height: 255px;
   padding: 28px;
   background: #fff;
+  border-radius: var(--radius-md);
   transition: 180ms ease;
 }
 
@@ -753,6 +756,7 @@ h3 {
 .therapy-detail-grid article {
   background: #fff;
   padding: 28px;
+  border-radius: var(--radius-md);
 }
 
 .metric strong,
@@ -992,6 +996,7 @@ h3 {
   padding: 28px;
   background: #fff;
   border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
 
@@ -1007,6 +1012,7 @@ h3 {
 .contact-form select {
   width: 100%;
   border: 1px solid var(--line);
+  border-radius: 12px;
   padding: 13px 14px;
   color: var(--ink);
   font: inherit;
@@ -1032,6 +1038,11 @@ h3 {
 }
 
 .site-footer a {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.site-footer span {
   display: block;
   margin-bottom: 9px;
 }

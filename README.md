@@ -17,14 +17,13 @@ Abre `index.html` directamente en el navegador o usa cualquier servidor estátic
 ## Personalización rápida
 
 - Reemplaza el WhatsApp en `reservas.html` y `contacto.html`.
-- Sustituye imágenes de referencia por fotos reales del equipo y del espacio.
+- Sustituye imágenes de referencia por fotos reales del espacio y detalles de atención.
 - Conecta `Agendar evaluación inicial` a Calendly, WhatsApp o tu sistema de agenda.
 
 ## Páginas incluidas
 
 - `index.html`: portada.
-- `quienes-somos.html`: equipo y enfoque.
+- `quienes-somos.html`: enfoque y forma de trabajo.
 - `programas.html`: dolor crónico y acompañamiento oncológico.
 - `reservas.html`: evaluación inicial.
-- `noticias.html`: contenidos educativos.
 - `contacto.html`: canales y formulario.
