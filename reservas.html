@@ -1,15 +1,17 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Agenda o solicita información en Medicina Integrativa Chile.">
     <title>Reservas | Medicina Integrativa Chile</title>
+    <link rel="icon" type="image/jpeg" href="assets/favicon-mintegrativa.jpeg">
+    <link rel="apple-touch-icon" href="assets/favicon-mintegrativa.jpeg">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand brand-logo" href="index.html" aria-label="Medicina Integrativa Chile"><img src="assets/logo-medicina-integrativa-chile.jpeg" alt="Logo Medicina Integrativa Chile"><span class="brand-text">Medicina Integrativa Chile</span></a>
+      <a class="brand brand-logo header-wordmark" href="index.html" aria-label="MIntegrativa"><img src="assets/logo-header-mintegrativa.jpeg" alt="MIntegrativa"></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Abrir menú</span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="quienes-somos.html">Quiénes somos</a><a href="programas.html">Programas</a><a href="reservas.html">Reservas</a><a href="contacto.html">Contacto</a></nav>
     </header>
@@ -26,12 +28,15 @@
           <h2>Completa tus datos</h2>
           <p>Déjanos tu información de contacto y te escribiremos para conocer mejor tu caso y orientarte sobre el primer paso.</p>
         </div>
-        <form class="contact-form" id="solicitud">
-          <label>Nombre completo<input type="text" name="nombre" placeholder="Escribe tu nombre y apellido"></label>
-          <label>WhatsApp<input type="tel" name="whatsapp" placeholder="Ej: +56 9 1234 5678"></label>
-          <label>Correo electrónico<input type="email" name="email" placeholder="nombre@correo.com"></label>
-          <label>Programa o atención de interés<select name="programa"><option>Programa Integrativo para Dolor Crónico</option><option>Programa de Acompañamiento Oncológico Integrativo</option><option>Otra atención / bienestar</option><option>No estoy seguro/a</option></select></label>
-          <label>Preferencia de contacto<select name="preferencia"><option>WhatsApp</option><option>Llamada telefónica</option><option>Correo electrónico</option></select></label>
+        <form class="contact-form" id="solicitud" action="https://formsubmit.co/contacto@mintegrativa.cl" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud de reserva - Medicina Integrativa Chile">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <label>Nombre completo<input type="text" name="nombre" placeholder="Escribe tu nombre y apellido" required></label>
+          <label>WhatsApp<input type="tel" name="whatsapp" placeholder="Ej: +56 9 1234 5678" required></label>
+          <label>Correo electrónico<input type="email" name="email" placeholder="nombre@correo.com" required></label>
+          <label>Programa o atención de interés<select name="programa" required><option value="">Selecciona una opción</option><option>Programa Integrativo para Dolor Crónico</option><option>Programa de Acompañamiento Oncológico Integrativo</option><option>Otra atención / bienestar</option><option>No estoy seguro/a</option></select></label>
+          <label>Preferencia de contacto<select name="preferencia" required><option value="">Selecciona una opción</option><option>WhatsApp</option><option>Llamada telefónica</option><option>Correo electrónico</option></select></label>
           <label>Mensaje opcional<textarea name="mensaje" rows="5" placeholder="Si quieres, cuéntanos brevemente qué estás buscando"></textarea></label>
           <button class="button" type="submit">Enviar solicitud</button>
         </form>
@@ -43,7 +48,8 @@
         <p>En procesos oncológicos, nuestro acompañamiento no reemplaza el tratamiento médico oficial, sino que lo complementa desde una mirada integrativa y responsable.</p>
       </section>
     </main>
-    <footer class="site-footer"><div><h2>Medicina Integrativa Chile</h2><p>Programas de salud integrativa para dolor crónico y acompañamiento oncológico.</p></div><div><h3>Navegación</h3><a href="index.html">Inicio</a><a href="quienes-somos.html">Quiénes somos</a><a href="programas.html">Programas</a></div><div><h3>Programas</h3><a href="programas.html#dolor-cronico">Dolor crónico</a><a href="programas.html#acompanamiento-oncologico">Acompañamiento oncológico</a></div><div><h3>Contacto</h3><a href="mailto:contacto@mintegrativa.cl">contacto@mintegrativa.cl</a><span>Las Condes, Santiago</span><span>Atención con reserva previa</span></div><p class="copyright">© 2026 Medicina Integrativa Chile. Todos los derechos reservados.</p></footer>
+    <footer class="site-footer"><div><img class="footer-logo" src="assets/logo-footer-mintegrativa.jpeg" alt="MIntegrativa"><p>Programas de salud integrativa para dolor crónico y acompañamiento oncológico.</p></div><div><h3>Navegación</h3><a href="index.html">Inicio</a><a href="quienes-somos.html">Quiénes somos</a><a href="programas.html">Programas</a></div><div><h3>Programas</h3><a href="programas.html#dolor-cronico">Dolor crónico</a><a href="programas.html#acompanamiento-oncologico">Acompañamiento oncológico</a></div><div><h3>Contacto</h3><a href="mailto:contacto@mintegrativa.cl">contacto@mintegrativa.cl</a><span>Las Condes, Santiago</span><span>Atención con reserva previa</span></div><p class="copyright">© 2026 Medicina Integrativa Chile. Todos los derechos reservados.</p></footer>
     <script src="script.js"></script>
   </body>
 </html>
+
